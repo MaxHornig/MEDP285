@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page One of Midterm</title>
+
+    <link rel="stylesheet" type="text/css" href="midtermstyle.css" />
+  </head>
+  <style>
+    .parent {
+      display: grid;
+      grid-template-columns: 15% 1200px 15%;
+      justify-content: center;
+      grid-template-rows: 50px 600px 80px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+
+    .div1 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    .div2 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    .div3 {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    .div4 {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    .div5 {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    .div6 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    .div7 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .div8 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .div9 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+
+    /* Stars 
+------------------------------------- */
+
+    #space,
+    .stars {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    .stars {
+      background-image: radial-gradient(
+          2px 2px at 20px 30px,
+          #eee,
+          rgba(0, 0, 0, 0)
+        ),
+        radial-gradient(2px 2px at 40px 70px, #00FFFF, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+      background-repeat: repeat;
+      background-size: 200px 200px;
+      animation: zoom 5s infinite;
+      opacity: 0;
+    }
+
+    .stars:nth-child(1) {
+      background-position: 50% 50%;
+      animation-delay: 0s;
+    }
+    .stars:nth-child(2) {
+      background-position: 20% 60%;
+      animation-delay: 1s;
+    }
+    .stars:nth-child(3) {
+      background-position: -20% -30%;
+      animation-delay: 2s;
+    }
+    .stars:nth-child(4) {
+      background-position: 40% -80%;
+      animation-delay: 3s;
+    }
+    .stars:nth-child(5) {
+      background-position: -20% 30%;
+      animation-delay: 4s;
+    }
+
+    @keyframes zoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+        animation-timing-function: ease-in;
+      }
+      85% {
+        opacity: 1;
+        transform: scale(2.8);
+        animation-timing-function: linear;
+      }
+      100% {
+        opacity: 0;
+        transform: scale(3.5);
+      }
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <header>
+          <h1><center>ARTSY MOON</center></h1>
+          <br />
+          AVATAR RETEXTURING
+        </header>
+      </div>
+      <div class="div2">
+        <main>
+          <h1><center>            VRCHAT AVATAR RETEXTURING <br /><br /><br />
+            <iframe
+              style="width: 500px; height: 570px; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              src="https://editor.p5js.org/MaxHornig/full/YkMHZ1hRe"
+            ></iframe></center>
+
+          </h1>
+        </main>
+      </div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5">
+        <footer>
+          TWITTER<br />
+          <br /><br /><br />BSKY 
+          <br /><br /><br /><br />
+          TELEGRAM
+          <br /><br /><br /><br />INSTAGRAM
+          <br /><br /><br /><br />TUMBLR
+          <br /><br /><br /><br />FACEBOOK
+          <br /><br /><br /><br />EMAIL
+          <br /><br /><br /><br />TRELLO
+        </footer>
+      
+      </div>
+      <div class="div6"><footer><h2>CONTACT &amp SOCIALS <br>
+        
+        </h2><br></footer></div>
+      <div class="div7">
+        <nav>
+          <h2><center>NAVIGATE</center></h2>
+          <br />
+        </nav>
+      </div>
+      <div class="div8">
+        <nav class="crumbs">
+          <center><br />
+          <a class="btn--remix" target="_top" href="/slideshow.html">
+            SLIDESHOW
+          </a>
+          <br />
+          <br />
+          <br /><br /><br />
+          <a class="btn--remix" target="_top" href="/videos.html"> VIDEOS </a>
+          <br />
+          <br />
+          <br /><br /><br />
+          <a class="btn--remix" target="_top" href="/midterm.html"> EXAMPLE </a>
+          <br />
+          <br />
+          <br /><br /><br />
+          <a class="btn--remix" target="_top" href="/midterm.html"> EXAMPLE </a>
+          <br />
+          <br />
+          <br /><br /><br />
+          <a class="btn--remix" target="_top" href="/midterm.html"> EXAMPLE </a>
+          <br />
+          <br />
+          <br /><br /><br />
+          <a class="btn--remix" target="_top" href="/midterm.html"> EXAMPLE </a>
+          <br />
+          <br />
+          <br /><br /><br />
+          <a class="btn--remix" target="_top" href="/midterm.html"> EXAMPLE </a>
+          <br />
+          <br />
+          <br /></center>
+          
+        </nav>
+      </div>
+      <div class="div9"></div>
+    </div>
+    <div id="space">
+      <div class="stars"></div>
+      <div class="stars"></div>
+    </div>
+  </body>
+</html>
